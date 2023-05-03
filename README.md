@@ -31,3 +31,9 @@ cd ..
 ```
 conda deactivate 
 ```
+
+
+The way to get v0.1.28 pynecone-examples code is the following.
+```
+git clone --branch tag-pc-0-1-28 https://github.com/milochen0418/py-webapp.git py-webapp-0-1-28
+```
