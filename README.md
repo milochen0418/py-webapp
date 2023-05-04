@@ -1,5 +1,5 @@
 # Pynecone Examples for pynecone tag v0.1.28
-
+## The way to run all examples from terminal (or VSCode)
 A repository full of Pynecone example apps.
 
 This is a special branch of from the official examples.
@@ -37,3 +37,8 @@ The way to get v0.1.28 pynecone-examples code is the following.
 ```
 git clone --branch tag-pc-0-1-28 https://github.com/milochen0418/py-webapp.git py-webapp-0-1-28
 ```
+
+
+## The way to run from colab
+Refer this file 
+https://colab.research.google.com/drive/1OW-ACHhArX7DTNojQd96jVJQU923H9Qo?usp=sharing
