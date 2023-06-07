@@ -9,7 +9,6 @@ filename = f"{config.app_name}/{config.app_name}.py"
 
 class State(pc.State):
     """The app state."""
-
     pass
 
 
@@ -17,29 +16,36 @@ def index() -> pc.Component:
     return pc.center(
         pc.vstack(
             pc.heading("Welcome to Pynecone!", font_size="2em"),
-            
-            pc.markdown("""
-            # Markdown One
-            ## Document Test
-            - This is a book
-            - This is book 2
-            - This is item 3
-            """
+            pc.hstack(
+        
+                pc.vstack(
+                    pc.markdown("""
+                    # Markdown One
+                    ## Document Test
+                    - This is a book
+                    - This is book 2
+                    - This is item 3
+                    """
+                    ),
+                    align_items="left",
+                ),
+                pc.vstack(
+                    pc.markdown("""
+                    # Markdown Two
+                    ## Document Test
+                    - This is a book
+                    - This is book 2
+                    - This is item 3
+                    ## Document Test 2
+                    - This is a book A
+                    - This is book B
+                    - This is item C
+                    """
+                    ),
+                    align_items="left",
+                ),
+                spacing="1em",
             ),
-            pc.markdown("""
-            # Markdown Two
-            ## Document Test
-            - This is a book
-            - This is book 2
-            - This is item 3
-            ## Document Test 2
-            - This is a book A
-            - This is book B
-            - This is item C
-            """
-            ),
-
-            
             spacing="1.5em",
             font_size="2em",
         ),
