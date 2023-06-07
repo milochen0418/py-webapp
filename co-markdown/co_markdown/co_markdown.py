@@ -1,10 +1,6 @@
 """Welcome to Pynecone! This file outlines the steps to create a basic app."""
 from pcconfig import config
-
 import pynecone as pc
-
-docs_url = "https://pynecone.io/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
 
 
 class State(pc.State):
@@ -15,9 +11,8 @@ class State(pc.State):
 def index() -> pc.Component:
     return pc.center(
         pc.vstack(
-            pc.heading("Welcome to Pynecone!", font_size="2em"),
+            pc.heading("Collaborative Markdown", font_size="2em", w="100%"),
             pc.hstack(
-        
                 pc.vstack(
                     pc.markdown("""
                     # Markdown One
@@ -28,6 +23,12 @@ def index() -> pc.Component:
                     """
                     ),
                     align_items="left",
+                    bg="#ededed",
+                    margin="0em",
+                    padding="1em",
+                    border_radius="0.5em",
+                    shadow="lg",
+                    w="100%",
                 ),
                 pc.vstack(
                     pc.markdown("""
@@ -43,13 +44,23 @@ def index() -> pc.Component:
                     """
                     ),
                     align_items="left",
+                    bg="#ededed",
+                    margin="0em",
+                    padding="1em",
+                    border_radius="0.5em",
+                    shadow="lg",
+                    w="100%",
                 ),
-                spacing="1em",
+                spacing="0.5em",
+                w="100%",
+                
             ),
             spacing="1.5em",
             font_size="2em",
+            w="100%",
+            margin="0.5em",
         ),
-        padding_top="10%",
+        w="100%",
     )
 
 
