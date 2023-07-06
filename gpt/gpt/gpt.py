@@ -3,8 +3,10 @@ import reflex as rx
 from .helpers import navbar
 import openai
 import datetime
+import os
 
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = os.environ.get("OPENAI_KEY","YOUR_OPENAI_KEY")
+
 MAX_QUESTIONS = 10
 
 
